@@ -1,7 +1,15 @@
 # modified from utrnet by Abdulrahman et. al. disabling data augmentation.
+
 #! git clone https://github.com/mohammadalihumayun/UTRNet-High-Resolution-Urdu-Text-Recognition.git
 #! pip install lmdb
 #! pip install timm==0.6.12
+
+#! pip3 install fire
+
+# create lmdb dataset
+#! python create_lmdb_dataset.py --inputPath 'rois_path' --gtFile 'ground_truth_file_path' --outputPath 'output_path'
+
+
 # %cd '/content/UTRNet-High-Resolution-Urdu-Text-Recognition/'
 
 
