@@ -7,10 +7,12 @@
  pip3 install fire
 ```
 # create lmdb dataset
-` python create_lmdb_dataset.py --inputPath 'rois_path' --gtFile 'ground_truth_file_path' --outputPath 'output_path'`
+```
+python create_lmdb_dataset.py --inputPath 'rois_path' --gtFile 'ground_truth_file_path' --outputPath 'output_path'
 
 
-# %cd '/content/UTRNet-High-Resolution-Urdu-Text-Recognition/'
+%cd '/content/UTRNet-High-Resolution-Urdu-Text-Recognition/'
+```
 
 
 # training from scratch
