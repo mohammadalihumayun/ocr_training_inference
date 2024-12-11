@@ -24,4 +24,6 @@ python create_lmdb_dataset.py --inputPath 'rois_path' --gtFile 'ground_truth_fil
 # inference to save results reading from a source folder
 
  change option to images_path for modified read.py to read and compute cer for multiple lines
+
+ 
 `python3 read_save.py --output_text /content/drive/MyDrive/ocr_urdu/seerat/preds.csv --images_path source_rois_path/rois --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC  --saved_model  path/best_norm_ED_tuned_e2e_p14_p70_ep3.pth`
