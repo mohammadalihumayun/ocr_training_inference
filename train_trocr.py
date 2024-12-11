@@ -1,5 +1,5 @@
 ! pip install -q evaluate jiwer
-df = 
+#df = import and call the modeule creating df 
 train_df =df.iloc[:-100].reset_index(drop=True)
 test_df = df.iloc[-100:].reset_index(drop=True)#.head(4)
 
