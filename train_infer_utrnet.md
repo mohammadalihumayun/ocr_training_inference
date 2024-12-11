@@ -18,7 +18,11 @@ python create_lmdb_dataset.py --inputPath 'rois_path' --gtFile 'ground_truth_fil
 # training from scratch
 ` python3 train.py --train_data /content/val --valid_data /content/val --freeze_visual 'no' --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC --exp_name UTRNet-Large --num_epochs 2 --batch_size 2`
 
-# fine tuning from first trained model (set freeze visual to 'yes' or 'no' to freeze cnn based visual feature extraction)
+# fine tuning from first trained model 
+
+(set freeze visual to 'yes' or 'no' to freeze cnn based visual feature extraction)
+
+
 `python3 train.py --train_data /content/train --valid_data /content/val --saved_model 'path/z1_e2e_best_norm_ED.pth' --freeze_visual 'no' --Prediction CTC --exp_name UTRNet-Large --num_epochs 1 --batch_size 6`
 
 # inference to save results reading from a source folder
